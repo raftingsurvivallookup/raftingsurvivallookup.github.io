@@ -33,12 +33,15 @@
             box-sizing: border-box;
         }
 
-        body, html {
+        body,
+        html {
             width: 100%;
-            height: 100%;
+            height: 10000000%;
             font-family: var(--font-primary);
             color: var(--text-color);
             background-color: var(--background-color);
+            background-size: cover;
+            background-position: center;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -63,7 +66,7 @@
         #theme-switch svg {
             fill: var(--secondary-color);
         }
-        
+
         #theme-switch svg:last-child {
             display: none;
         }
@@ -76,7 +79,9 @@
             display: block;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             font-family: var(--font-secondary);
             color: var(--primary-color);
         }
@@ -186,20 +191,54 @@
             width: 100%;
             text-align: center;
         }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .search-bar {
+                font-size: 0.8rem;
+                padding: 0.5rem 0.7rem;
+            }
+
+            .game-item {
+                font-size: 0.8rem;
+            }
+
+            .game-item .game-name {
+                font-size: 1rem;
+            }
+
+            footer {
+                padding: 0.5rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <button id="theme-switch">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+        </svg>
     </button>
 
     <h1>Roblox Rafting Survival Games</h1>
     <h2>Help the Search</h2>
     <h3>raftingsurvivallookup@gmail.com</h3>
     <h3><a href="https://discord.gg/7zAQNMvp">Official Discord Server</a></h3>
-    <h3><a href="https://www.youtube.com/results?search_query=roblox+build+a+boat+raft+to+survive+sail+before%3A2017">YouTube Search Term</a></h3>
+    <h3><a href="https://www.youtube.com/results?search_query=roblox+build+a+boat+raft+to+survive+sail+before%3A2017">YouTube
+            Search Term</a></h3>
     <h3><a href="https://www.idcrawl.com">IdCrawl</a></h3>
 
     <h2>Games</h2>
@@ -231,6 +270,111 @@
                     name: "Build A Boat For Treasure",
                     hyperlink: "https://www.roblox.com/games/537413528/Build-A-Boat-For-Treasure",
                     creationDate: "11/2/2016"
+                },
+                {
+                    name: "Build a Raft'n Go Down The Waterfall!",
+                    hyperlink: "https://www.roblox.com/games/3620605/Build-a-Raftn-Go-Down-The-Waterfall",
+                    creationDate: "8/16/2008"
+                },
+                {
+                    name: "Advanced Raft Build Survival",
+                    hyperlink: "https://www.roblox.com/games/23953809/Advanced-Raft-Build-Survival",
+                    creationDate: "3/16/2010"
+                },
+                {
+                    name: "[Roblox Archive] Build a Raft and Sail",
+                    hyperlink: "https://www.roblox.com/games/3472034164/Roblox-Archive-Build-a-Raft-and-Sail",
+                    creationDate: "7/15/2019"
+                },
+                {
+                    name: "Make a Raft and Go Down 3 Rivers",
+                    hyperlink: "https://www.roblox.com/games/18305939461/Make-a-Raft-and-Go-Down-3-Rivers",
+                    creationDate: "7/2/2024"
+                },
+                {
+                    name: "Raft Survival: Volcano",
+                    hyperlink: "https://www.roblox.com/games/111625830/Raft-Survival-Volcano",
+                    creationDate: "4/3/2013"
+                },
+                {
+                    name: "Rafting Survival",
+                    hyperlink: "https://www.roblox.com/games/180117391/Rafting-Survival",
+                    creationDate: "9/29/2014"
+                },
+                {
+                    name: "Raft Riding Game",
+                    hyperlink: "https://www.roblox.com/games/5084360659/Raft-Riding-Game",
+                    creationDate: "5/25/2020"
+                },
+                {
+                    name: "Raft Survival",
+                    hyperlink: "https://www.roblox.com/games/14569854/Raft-Survival",
+                    creationDate: "8/16/2009"
+                },
+                {
+                    name: "Build a Raft And Go Down the Waterfall",
+                    hyperlink: "https://www.roblox.com/games/30167270/Build-a-Raft-And-Go-Down-the-Waterfall",
+                    creationDate: "7/6/2010"
+                },
+                {
+                    name: "Build a Raft and Ride it! =Upgrades=",
+                    hyperlink: "https://www.roblox.com/games/77019372/Build-a-Raft-and-Ride-it-Upgrades",
+                    creationDate: "4/9/2012"
+                },
+                {
+                    name: "Build & Ride A Raft II",
+                    hyperlink: "https://www.roblox.com/games/61344986/Build-Ride-A-Raft-II",
+                    creationDate: "9/8/2011"
+                },
+                {
+                    name: "Mine Cart Raft Ride",
+                    hyperlink: "https://www.roblox.com/games/4540374/Mine-Cart-Raft-Ride",
+                    creationDate: "9/28/2008"
+                },
+                {
+                    name: "Build & Ride a Raft or SKATEBOARD to VIP!",
+                    hyperlink: "https://www.roblox.com/games/21620834/Build-Ride-a-Raft-or-SKATEBOARD-to-VIP",
+                    creationDate: "2/1/2010"
+                },
+                {
+                    name: "Build a Raft and Sail TO YOUR DOOOOOM!",
+                    hyperlink: "https://www.roblox.com/games/24364666/Build-a-Raft-and-Sail-TO-YOUR-DOOOOOM",
+                    creationDate: "3/24/2010"
+                },
+                {
+                    name: "Build a Raft to Find Treasure",
+                    hyperlink: "https://www.roblox.com/games/124274550204300/Build-a-Raft-to-Find-Treasure",
+                    creationDate: "4/10/2025"
+                },
+                {
+                    name: "Build a Raft and Go Down a River! [Classic]",
+                    hyperlink: "https://www.roblox.com/games/18745326/Build-a-Raft-and-Go-Down-a-River-Classic",
+                    creationDate: "12/2/2009"
+                },
+                {
+                    name: "Survive on Raft βeta 1.0",
+                    hyperlink: "https://www.roblox.com/games/129466682419130/Survive-on-Raft-eta-1-0",
+                    creationDate: "12/11/2024"
+                },
+                {
+                    name: "Flooded Area",
+                    hyperlink: "https://www.roblox.com/games/3976767347/Flooded-Area",
+                    creationDate: "9/25/2019"
+                },
+                {
+                    name: "Build A Boat With Blocks",
+                    hyperlink: "https://www.roblox.com/games/7142143048/Build-A-Boat-With-Blocks",
+                    creationDate: "7/23/2021"
+                },
+                {
+                    name: "Building Boats ⛵ [SPRINGS 🔥]",
+                    hyperlink: "https://www.roblox.com/games/134408426670720/Building-Boats-SPRINGS",
+                    creationDate: "2/19/2025"
+                },
+                {
+                    name: "Pocket Pirates [Ship Building Physics Game!]",
+                    hyperlink: "https://www.roblox.com/games/759879066/Pocket-Pirates-Ship-Building-Physics-Game",
+                    creationDate: "4/30/2017"
                 }
             ];
 
